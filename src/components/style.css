@@ -1,0 +1,21 @@
+.margin{
+    width:100%;
+}
+.parent{
+    display:flex;
+}
+.list{
+    width:70%;
+}
+.form{
+    width:30%;
+    position: absolute;
+    right: 0;
+}
+.stats{
+    border:1px black;
+    border-style:outset;
+}
+.card{
+    border:1px solid black
+}
