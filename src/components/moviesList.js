@@ -43,7 +43,7 @@ const MoviesList = (props) => {
   return(
     <div>
       {sortMovie.length > 0 && (
-      <div>
+      <div class='movie-list'>
         <form>
         <input type="text" value={search} placeholder="search by movie" onChange={handleSearchChange}/>
           <select value={filter} onChange={handleFilterChange}>
