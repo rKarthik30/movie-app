@@ -17,7 +17,7 @@ const MovieStats = (props) => {
   }
 
   return(
-    <div>
+    <div class="movie-stats">
       <h2>Movie State</h2>
       <h3>Total movies - {movie.length}</h3>
       <p>Top Ranked Movie - {topMovie}</p>

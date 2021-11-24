@@ -30,13 +30,14 @@ const MovieForms = (props) => {
     setRank('')
   }
   return(
-    <div>
+    <div class="add-movie">
       <h2>Add Movie</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" value={name} onChange={handleChange} name="name" placeholder="Enter movie name"/><br/>
         <input type="text" value={rank} onChange={handleChange} name="rank" placeholder="IMDB Ranking"/><br/>
-
-        <input type="submit" value="Add"/>
+        <div class='submit'>
+          <input type="submit" value="Add"/>
+        </div>
       </form>
     </div>
   )

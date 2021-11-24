@@ -1,8 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+input[type="text"]
+{
+    outline:none;
+}
+html,body{
+    font-family:'Open Sans';
+    margin:0 20px ;
+    height:100vh;
+    background-color: #000;
+    color: #fff;
+}
+
 .margin{
     width:100%;
 }
+.margin h1
+{
+    text-align: center;
+    background-color: #121212;
+    
+}
+
 .parent{
     display:flex;
+    flex-wrap: wrap;
+    padding-top:20px;
 }
 .list{
     width:70%;
@@ -12,10 +35,65 @@
     position: absolute;
     right: 0;
 }
-.stats{
-    border:1px black;
-    border-style:outset;
-}
+
 .card{
-    border:1px solid black
+    border:1px solid rgb(0, 0, 0);
+    width:20%;
+    margin:10px;
+    margin-left:0;
+    color:#000;
+    background-color: #fff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding:10px;
+
+}
+.card h3
+{
+    font-size:25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.add-movie, .movie-stats{
+    color: #000;
+    width: 300px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: #fff;
+    border-radius:15px;
+    height:fit-content;
+    box-sizing: border-box;
+    padding: 3px;
+}
+.add-movie h2, .movie-stats h2
+{
+    margin:0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.add-movie input[type="text"]
+{
+    margin: 10px 5px;
+    width: 90%;
+    border-radius: 5px;
+    height: 30px;
+    background-color: rgb(207, 207, 207);
+    border: none;
+    padding-left: 10px;
+}
+.submit{
+    text-align: center;
+}
+.submit input[type='submit']{
+    margin:10px 0;
+    width: 25%;
+    height: 30px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgba(214, 203, 203, 0.945); 
+}
+.movie-stats h3, .movie-stats p
+{
+    margin-left:10px;
 }
